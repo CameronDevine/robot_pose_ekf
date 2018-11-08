@@ -67,7 +67,9 @@ install(
 )
 
 install(
-    FILES robot_pose_ekf.launch example_with_gps.launch
+    FILES
+	${CMAKE_CURRENT_SOURCE_DIR}/robot_pose_ekf.launch
+	${CMAKE_CURRENT_SOURCE_DIR}/example_with_gps.launch
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
